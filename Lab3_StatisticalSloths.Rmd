@@ -1,0 +1,96 @@
+---
+title: "Lab3_StatisticalSloths"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(tidyverse)
+source("http://www.openintro.org/stat/data/cdc.R")
+cdc <- as_tibble(cdc)
+```
+
+
+## What is the relationship between general health and smoking controlling for gender? 
+* This is an interesting question because the answer could help us to find a better understand of how smoking impacts one's general health and well being, specifically looking at males and females. This is important because knowing this may help to discourage people from continuing to smoke or starting smoking, and encourage those who want to improve their general well being to stop smoking. 
+
+## Team Plot 
+
+```{r}
+ggplot(data = cdc) +
+  geom_bar(mapping = aes(x = gender, fill= genhlth)) +
+  facet_grid(smoke100~genhlth)+
+  ggtitle('General Health vs. Smoking')
+```
+
+#### Our Findings:
+
+* Our team saw that for both men and women there were more people with excellent health that were non-smokers than those who did smoke. More people had poor health if they did smoke than those who did not. In general, more men smoked than women.
+
+#### Our Conclusion:
+
+* The data shows that smoking leads to a decrease in the general health levels of both genders. For both males and females, there was an increase in the number of reported fair and poor general health levels among smokers. Among non-smokers there was an increase in the number of reported excellent health levels. 
+
+#### Our Reccomendation: 
+
+* Our reccomendation is that we should continue to analyze more data specifcally trying to learn more about the problem of nicotine addiction in general which would be interesting with the rise of e-cigs and vapes. There should be more legislation put in place to help us to combat the negative impact of smoking.
+
+## Individual Plots 
+
+#### Madeline's PLot
+
+```{r}
+ggplot(data = cdc, mapping = aes(x = genhlth, y = weight, color=genhlth)) + 
+  geom_boxplot() +
+  geom_boxplot() +
+  coord_flip()
+```
+
+Madeline's Findings: I found that people who felt poorly had an average mean weight that was greater than the average weight for people who said that they felt excellent.  
+
+
+
+#### Zandy Plot 
+```{r}
+ggplot(data = cdc) +
+geom_bar(mapping = aes(x = age, fill = genhlth)) +
+facet_wrap(~ hlthplan) +
+xlab("age")
+
+```
+
+Zandy's Findings:I found that as age goes up general health goes down while people with a healthplan overall, have better health than people who don't have a health plan. This plot confirms that as you get older, your health deteriorates and that people with a healthplan have better health overall than people without a health plan.
+
+
+#### Katie's Plot 
+```{r}
+ggplot(data = cdc) +
+  geom_histogram(mapping = aes(x= age, fill = genhlth)) +
+  facet_grid(smoke100~genhlth)
+```
+Katie's Findings: I found that the more people smoked the worse the felt and that most people that smoked were middle aged. 
+
+#### Kevin's Plot 
+```{r}
+ggplot(data = cdc) + 
+  geom_jitter(mapping = aes(x = genhlth, y = age, color = genhlth)) + 
+  facet_wrap(~ exerany) + 
+  xlab("General Health") + 
+  ylab("Age") + 
+  theme(axis.text.x = element_text(angle=17))
+```
+Kevin's Findings: There are more people reporting better health levels and less reporting poor health levels among those who have exercised.
+
+### Team Summary:
+
+* I, Katie Stewart, created a histogram showing how general health and smoking were related and how they differ between age groups. The data showed that those who smoke and are over the age of about 30 are more susceptible to having poor or fair health. I used the geom_histogram function to create my graph and added a color fill. I also used the facet_grid function to make it easier to distinguish between those who smoke and those who do not among their age groups. 
+
+* I, Zandy Boone, created a plot that shows the relationship with age and general health with the added varibale of the people having a health plan or not and how that affects general health. I added the facet_wrap to differentiate between people with a helthplan and those without and I also added a x label to make the graph easier to read.
+
+* I, Kevin Luth, created a plot showing how general health and exercise are related and whether age affects this relationship. The data showed that regardless of age, there is a distinct difference in the general health levels of those who have exercised in the last month and those who have not. I used the geom_jitter function and adjusted the color of the general health levels. In addition I used the facet_wrap function to clearly display the difference in the levels of those who exercise and those who do not. I also changed the axis labels to display the full word rather than just the abbreviations and I rotated the x tick mark labels so that they did not overlap.
+
+* I, Madeline Garrett created a plot showing general health ratings versus weight in the form of a box plot. I used geomplot and the color aesthetic and I used geom_boxplot to create box plots for weight for each rating of their helath. I them used the coord_flip() to flip it them so that it was in a direction that made more sense. 
+
+
