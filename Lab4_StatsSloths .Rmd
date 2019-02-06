@@ -1,0 +1,78 @@
+---
+title: "Lab4_StatisticalSloths"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+babies <- read_csv("https://raw.githubusercontent.com/ervance1/Sp2018-Data-Science-repo/master/babies2a.dat")
+babies <- rename(babies, bwtoz = `bwt/oz`) #renaming `bwt/oz` because the "/" sign requires special care
+
+```
+
+# Does Smoking Lead to Babies Born Prematurely? 
+* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children specifically if smoking can lead to a premature birth which can be extremely dangerous for children. This question is important because knowing this may help to advise mothers to help avoid children from being born early. 
+
+```{r}
+ggplot(data = babies) +
+  geom_bar(mapping = aes(x = gestation))+
+  facet_wrap(~smoke)+
+  ggtitle('')
+```
+
+
+
+# Does Smoking Lead to Babies Born with Low Birth Weight?
+* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children specifically if smoking can lead to low birth weights which can be very troubling for new born babies. This question is important because knowing this may help to advise mothers to help avoid children from being born with dangerously low birth weights . 
+
+
+* Why these questions are important, and why those reasons are important >
+
+
+* Two plots (one per conclusion) that visually “answer” the two main questions
+
+* Conclusions - is based on data, but could also be the logical consequence of a combination of findings. In this lab report, your conclusion should be the answer to your overall question. 
+
+* Reccomendations - Inform your audience that there may be causally-relevant background characteristics not in the dataset that are not balanced in the two groups 
+
+# Prelimary question
+
+* Which variables are similar between smokers and nonsmokers? Which are different? 
+    - Show the plots of the background variables which you believe have different distributions between smokers and     nonsmokers.
+    
+
+# Individual Sub Questions 
+
+
+- Each individual should answer a unique question based on plots.
+- We need 4 different geom functions!! 
+- Show the plot or plots that lead you to the answer to your question. 
+- Explicitly describe which non-default functions or aesthetics were used (e.g., aesthetic properties like shape, size, alpha, etc. and non-default facet functions, stat functions, coordinate functions, scale functions, theme functions, position adjustments, captions, labels, or legends).
+
+Madeline's Plot 
+
+Kevin's Plot 
+
+Katie's Plot 
+
+Zandy's Plot 
+
+* Summary of who did what and what non-defaults were used to generate which plots.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
