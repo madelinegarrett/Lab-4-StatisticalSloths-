@@ -29,6 +29,12 @@ ggplot(data = babies) +
 # Does Smoking Lead to Babies Being Born with Low Birth Weights?
 * This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children specifically if smoking can lead to low birth weights which can be very troubling for new born babies. This question is important because knowing this may help to advise mothers to help avoid children from being born with dangerously low birth weights . 
 
+```{r}
+ggplot(data = babies) + 
+  geom_smooth(mapping = aes(x=gestation, y=bwtoz, color=as.factor(smoke)), se=FALSE) + 
+  xlab("Gestation Period Length") + 
+  ylab("Birth Weight (oz)")
+```
 
 * Why these questions are important, and why those reasons are important >
 
