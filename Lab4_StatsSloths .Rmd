@@ -74,7 +74,29 @@ Zandy's Plot
 
 
 
+```{r}
+cor(babies$smoke, babies$id)
+cor(babies$smoke, babies$gestation)
+cor(babies$smoke, babies$bwtoz)
+cor(babies$smoke, babies$parity)
+cor(babies$smoke, babies$mrace)
+cor(babies$smoke, babies$mage)
+cor(babies$smoke, babies$med)
+cor(babies$smoke, babies$mht)
+cor(babies$smoke, babies$mpregwt)
+cor(babies$smoke, babies$drace)
+cor(babies$smoke, babies$dage)
+cor(babies$smoke, babies$ded)
+cor(babies$smoke, babies$dht)
+cor(babies$smoke, babies$dwt)
+cor(babies$smoke, babies$marital)
+cor(babies$smoke, babies$inc)
+cor(babies$smoke, babies$smoke)
+cor(babies$smoke, babies$time)
+cor(babies$smoke, babies$number)
+cor(babies$smoke, babies$Premature)
 
+```
 
 
 
