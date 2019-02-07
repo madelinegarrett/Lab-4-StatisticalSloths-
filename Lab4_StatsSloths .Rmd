@@ -62,9 +62,11 @@ ggplot(data = babies) +
 Madeline's Plot 
 
 Kevin's Plot
+```{r}
 ggplot(data = babies) + 
   geom_smooth(mapping = aes(x=parity, y=bwtoz))
  (still adding more details)
+```
 
 Katie's Plot 
 
