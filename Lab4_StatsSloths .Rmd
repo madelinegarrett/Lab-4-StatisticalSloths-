@@ -15,7 +15,7 @@ babies <- rename(babies, bwtoz = `bwt/oz`) #renaming `bwt/oz` because the "/" si
 ```
 
 # Does Smoking Lead to Babies Being Born Prematurely? 
-* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children specifically if smoking can lead to a premature birth which can be extremely dangerous for children. This question is important because knowing this may help to advise mothers to help avoid children from being born early. 
+* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children, specifically if smoking can lead to a premature birth which can be extremely dangerous for children. This is important because knowing this may help to advise mothers to help avoid giving birth to children early, something that can affect the baby's well-being. 
 
 
 ```{r}
@@ -27,7 +27,7 @@ ggplot(data = babies) +
 
 
 # Does Smoking Lead to Babies Being Born with Low Birth Weights?
-* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children specifically if smoking can lead to low birth weights which can be very troubling for new born babies. This question is important because knowing this may help to advise mothers to help avoid children from being born with dangerously low birth weights . 
+* This question is interesting becuase it can help to better inform mothers about the risk that smoking can have on their unborn children, specifically if smoking can lead to low birth weights which can be very troubling for new born babies. This is important because knowing this may help to advise mothers to help avoid giving birth to children with dangerously low birth weights that could affect their health. 
 
 ```{r}
 ggplot(data = babies) + 
