@@ -76,6 +76,8 @@ Katie's Plot
 Zandy's Plot 
 
 * Summary of who did what and what non-defaults were used to generate which plots.
+### Team Summary:
+* I, Kevin Luth, created a plot answering the question of how the number of previous pregnancies had by someone affects their baby's birth weight. The data showed that child birth weights start to decrease as you get into higher numbers of previous pregnancies. I used the geom_smooth function and changed the color and width of the standard error interval to make it stand out on the gray background and to not have it overshadow the actual line. In addition, I changed the thickness of the line to make it more prominent on the page and in the error interval. I changed the x and y labels as well to more clearly display what they represent.
 
 
 
