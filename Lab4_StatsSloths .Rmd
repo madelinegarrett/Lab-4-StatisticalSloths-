@@ -73,7 +73,9 @@ Kevin's Findings:
 
 Katie's Plot 
 
-Zandy's Plot 
+Zandy's Plot:
+ggplot(data = babies) +
+  geom_jitter(mapping = aes( x =  , y = ),
 
 * Summary of who did what and what non-defaults were used to generate which plots.
 ### Team Summary:
