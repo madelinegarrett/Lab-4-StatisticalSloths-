@@ -67,8 +67,8 @@ ggplot(data = babies) +
   geom_jitter(mapping = aes(x=smoke, y=med, color = as.factor(smoke)))
 ```
 
-# Individual Sub Questions 
 
+# Individual Sub Questions 
 
 - Each individual should answer a unique question based on plots.
 - We need 4 different geom functions!! 
@@ -76,6 +76,7 @@ ggplot(data = babies) +
 - Explicitly describe which non-default functions or aesthetics were used (e.g., aesthetic properties like shape, size, alpha, etc. and non-default facet functions, stat functions, coordinate functions, scale functions, theme functions, position adjustments, captions, labels, or legends).
 
 Madeline's Plot 
+
 
 Kevin's Plot
 * Question: Does the number of previous pregnancies had by someone affect their baby's birth weight?
@@ -88,6 +89,7 @@ ggplot(data = babies) +
 Kevin's Findings: 
 * The babies of those who have had a higher number of previous pregnancies tend to have lower birth weights.
 
+
 Katie's Plot:
 * Question: Does the mother's pre-pregnancy weight affect whether her baby will be born prematurely?
 ```{r}
@@ -99,9 +101,11 @@ ggplot(data = babies)+
 Katie's Findings:
 * A mother's pre-pregnancy weight does not seem to directly effect whether or not her baby will be born prematurely. However, by looking at the graph you can see that mother's who gave birth to premature babies were typically less than 150 pounds.
 
+
 Zandy's Plot:
 ggplot(data = babies) +
   geom_jitter(mapping = aes( x =  , y = ),
+
 
 * Summary of who did what and what non-defaults were used to generate which plots.
 ### Team Summary:
