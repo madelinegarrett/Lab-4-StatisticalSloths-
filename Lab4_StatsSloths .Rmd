@@ -64,7 +64,7 @@ Madeline's Plot
 Kevin's Plot
 ```{r}
 ggplot(data = babies) + 
-  geom_smooth(mapping = aes(x=parity, y=bwtoz), fill="red") + 
+  geom_smooth(mapping = aes(x=parity, y=bwtoz), fill="green", size=2, level=0.85) + 
   xlab("# of All Previous Pregnancies") + 
   ylab("Birth Weight (oz)")
 ```
