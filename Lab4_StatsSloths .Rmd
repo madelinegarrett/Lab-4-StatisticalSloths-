@@ -48,7 +48,7 @@ ggplot(data = babies) +
 # Prelimary question
 
 * Which variables are similar between smokers and nonsmokers? Which are different? 
-    - Show the plots of the background variables which you believe have different distributions between smokers and     nonsmokers.
+    - Show the plots of the background variables which you believe have different distributions between smokers and nonsmokers.
     
 
 # Individual Sub Questions 
