@@ -68,6 +68,7 @@ ggplot(data = babies) +
   xlab("# of All Previous Pregnancies") + 
   ylab("Birth Weight (oz)")
 ```
+Kevin's Findings: The babies of those who have had a higher number of previous pregnancies tend to have lower birth weights.
 
 Katie's Plot 
 
