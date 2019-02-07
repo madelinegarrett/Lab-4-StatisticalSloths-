@@ -43,6 +43,9 @@ ggplot(data = babies) +
 ### Conclusion
 * The data shows that generally, the babies of mothers who smoke have lower birth weights than of those who do not for almost all gestational ages. This means that the data does support the Surgeon General's second assertion.
 
+### Recommendations
+* 
+
 
 * Why these questions are important, and why those reasons are important >
 
@@ -51,6 +54,8 @@ ggplot(data = babies) +
 * Conclusions - is based on data, but could also be the logical consequence of a combination of findings. In this lab report, your conclusion should be the answer to your overall question. >
 
 * Reccomendations - Inform your audience that there may be causally-relevant background characteristics not in the dataset that are not balanced in the two groups 
+
+#Preliminary Question: Which variables are similar between smokers and nonsmokers? Which are different?
 
 
 # Individual Sub Questions 
