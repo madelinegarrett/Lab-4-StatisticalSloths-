@@ -38,8 +38,8 @@ ggplot(data = babies) +
 ### Conclusion
 * The data shows that generally, the babies of mothers who smoke have lower birth weights than of those who do not for almost all gestational ages. This means that the data does support the Surgeon General's second assertion.
 
-* Why these questions are important, and why those reasons are important >
 
+* Why these questions are important, and why those reasons are important >
 
 * Two plots (one per conclusion) that visually “answer” the two main questions
 
