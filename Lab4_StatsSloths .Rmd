@@ -99,8 +99,8 @@ ggplot(data = babies) +
   geom_jitter(mapping = aes(x = dwt, y = bwtoz), color = "green") +
   geom_smooth(mapping = aes(x = dwt, y = bwtoz), color = "blue")
   
-  Zandy's Findings:
-  * A mothers dad's weight does not seem to directly affect the birth weight of his baby with only a weak positive correlation of 0.14. The data also shows though, that most babies are born with the dad being about 150-200 lbs. and that those babies have overall higher birth weights mostly due to more data being concentrated in that weight range of 150-200 lbs.
+Zandy's Findings:
+* A mothers dad's weight does not seem to directly affect the birth weight of his baby with only a weak positive correlation of 0.14. The data also shows though, that most babies are born with the dad being about 150-200 lbs. and that those babies have overall higher birth weights mostly due to more data being concentrated in that weight range of 150-200 lbs.
 
 * Summary of who did what and what non-defaults were used to generate which plots.
 ### Team Summary:
