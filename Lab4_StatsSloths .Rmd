@@ -96,12 +96,16 @@ Katie's Findings:
 
 Zandy's Plot:
 ggplot(data = babies) +
-  geom_jitter(mapping = aes( x =  , y = ),
-
+  geom_jitter(mapping = aes(x = dwt, y = bwtoz), color = "green") +
+  geom_smooth(mapping = aes(x = dwt, y = bwtoz), color = "blue")
+  
+  Zandy's Findings:
+  * A mothers dad's weight does not seem to directly affect the birth weight of his baby with only a weak positive correlation of 0.14. The data also shows though, that most babies are born with the dad being about 150-200 lbs. and that those babies have overall higher birth weights mostly due to more data being concentrated in that weight range of 150-200 lbs.
 
 * Summary of who did what and what non-defaults were used to generate which plots.
 ### Team Summary:
 * I, Kevin Luth, created a plot showing the relationship between the number of previous pregnancies (parity) and birth weights. The data showed that child birth weights start to decrease as you get into higher numbers of previous pregnancies. I used the geom_smooth function and changed the color and width of the standard error interval to make it stand out on the gray background and to not have it overshadow the actual line. In addition, I changed the thickness of the line to make it more prominent on the page and in the error interval. I changed the x and y labels as well to more clearly display what they represent.
 * I, Katie Stewart, created a plot that shows the relationship between a mother's pre-pregnancy weight and whether her baby was born prematurely. The data showed that mothers who gave birth to premature babies typically had pre-pregnancy weights below 150 pounds. I used the geom_point function and changed the color of the plotted points. I also changed the labels on the x and y axis to make it easier to understand. 
+* I, Zandy Boone, created a plot showing the relationship between a dad's weight in pounds and his baby's birth weight in ounces. The data showed that there was a very weak correlation between the weigh of the dad and the weight of the baby with a correlation of 0.14. The data also shows though, that most babies are born with the dad being about 150-200 lbs. and that those babies have overall higher birth weights mostly due to more data being concentrated in that weight range of 150-200 lbs. I used a geom_ jitter function and a geom_smooth function with the dad's weight in pounds,  on the x-axis and the birth weights of the babies in ounces, on the y-axis for both graphs. I changed the colors of the line and the color of the points to make the line and points stand out more and to give the graph a more professional look.
 
 
